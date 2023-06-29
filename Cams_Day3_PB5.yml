@@ -1,7 +1,7 @@
 # ------------------------------------------------
 # Camerons Ansible DAY 3 PlayBook 5
 #
-# Purpose:  Use facts to determain output windows or Linux
+# Purpose:  Use facts to output windows or Linux
 # ------------------------------------------------
 ---
 - hosts: localhost
@@ -13,9 +13,9 @@
     debug: msg="{{ ansible_distribution }}"
   
   - name: This is linux
-    debug: msg=“Linux“
-    when: ansible_system == "Linux“
+    debug: msg="Linux Server"
+    when: ansible_system == "Linux"
 
   - name: This is windows
-    debug: msg=“Windows“
-    when: ansible_system == “Win32NT" 
+    debug: msg="Windows Server"
+    when: ansible_system == "Win32NT" 
