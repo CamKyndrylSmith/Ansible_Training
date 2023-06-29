@@ -4,7 +4,7 @@
 #
 # Purpose:  Create a file in the temp directory
 # ------------------------------------------------
-- name: Cam's playbook 2 (Name)
+- name: Cam's playbook 1 (Name)
   gather_facts: false
   hosts: all
   vars:
