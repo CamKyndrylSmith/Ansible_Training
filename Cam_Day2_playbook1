@@ -1,0 +1,15 @@
+---
+# ------------------------------------------------
+# Camerons Day 2 Playbook 1
+# ------------------------------------------------
+- name: Cam's first playbook (Name)
+  hosts: all
+
+  tasks:
+  # Put out a comment
+  - name: "First comment out Hello everyone"
+    win_shell: echo "Hello everyone"
+
+  # My second comment  
+  - name: "Second comment out"
+    win_shell: echo "Hi! back at you.."
