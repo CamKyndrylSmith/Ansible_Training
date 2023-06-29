@@ -1,8 +1,8 @@
 ---
 # ------------------------------------------------
-# Camerons Day 3 Playbook 4
+# Camerons Day 3 Playbook 3
 # ------------------------------------------------
-- name: Show value of whoami
+- name: "Show value of whoami using register"
   hosts: all
   tasks:
     - name: "Capture output of whoami command"
