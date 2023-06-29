@@ -3,6 +3,7 @@
 # Camerons Day 2 Playbook 1
 # ------------------------------------------------
 - name: Cam's first playbook (Name)
+  gather_facts: false
   hosts: all
 
   tasks:
