@@ -1,0 +1,12 @@
+---
+# ------------------------------------------------
+# Camerons Day 3 Playbook 4
+# ------------------------------------------------
+- name: Show value of whoami
+  hosts: all
+  tasks:
+    - name: "Capture output of whoami command"
+      win_shell: whoami
+      register: login
+
+    - debug: var=login.stdout
