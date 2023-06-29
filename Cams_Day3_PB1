@@ -1,0 +1,22 @@
+---
+# ------------------------------------------------
+# Camerons Ansible PlayBook 2
+#
+# Purpose:  Create a file in the temp directory
+# ------------------------------------------------
+- name: Cam's playbook 2 (Name)
+  gather_facts: false
+  hosts: all
+  vars:
+    myfile: 'C:\Temp\Cams_Test.txt'
+    
+  tasks:
+  # Put out a comment
+  - name: "Output comment to standard output"
+    win_shell: echo "Going to create a file in Temp folder called Cams_Test.txt"
+
+  # Create the empty file  
+  - name: "Creating an empty file"
+    win_file:
+      path: "{{ myfile }}"
+      state: touch
