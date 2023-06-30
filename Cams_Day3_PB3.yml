@@ -9,4 +9,5 @@
       win_shell: whoami
       register: login
 
-    - debug: var=login.stdout
+    - debug: var=login.start
+    - debug: var=login.cmd
